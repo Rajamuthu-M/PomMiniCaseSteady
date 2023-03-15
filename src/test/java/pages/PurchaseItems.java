@@ -52,8 +52,8 @@ public class PurchaseItems extends TestBase {
 	
 	public void purchaseItem(String name1,String country1,String city1,String card1,String month1,String year1) throws InterruptedException {  	
     	extentTest = reports.createTest("Purchase Item Test");
+    	Thread.sleep(1000);
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		Thread.sleep(1000);
 		wait.until(ExpectedConditions.elementToBeClickable(toCart));
 		toCart.click();
 		wait.until(ExpectedConditions.elementToBeClickable(buy));
