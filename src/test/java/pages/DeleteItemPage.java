@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import base.TestBase;
 
@@ -37,8 +36,8 @@ public class DeleteItemPage extends TestBase {
 		wait.until(ExpectedConditions.visibilityOf(price));
 		String valueAfter =price.getText();
     	int iAfter=Integer.parseInt(valueAfter);
-    	System.out.println(iBefore);
-    	System.out.println(iAfter);
+//    	System.out.println(iBefore);
+//    	System.out.println(iAfter);
 //    	Assert.assertNotEquals("iBefore", "iafter");
 //    	if(iBefore==iAfter)
 //    		System.out.println("Item not deleted");

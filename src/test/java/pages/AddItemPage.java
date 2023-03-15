@@ -9,7 +9,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import base.TestBase;
 
@@ -43,7 +42,7 @@ public class AddItemPage extends TestBase {
 		btn.click();
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alert = driver.switchTo().alert();
-		System.out.println(itemName+","+alert.getText());
+//		System.out.println(itemName+","+alert.getText());
 		alert.accept();
 		home.click();
 	}

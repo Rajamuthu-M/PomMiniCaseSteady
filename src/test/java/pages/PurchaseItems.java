@@ -67,9 +67,9 @@ public class PurchaseItems extends TestBase {
 		wait.until(ExpectedConditions.elementToBeClickable(purchase));
     	purchase.click();
     	boolean isDisp = confirm.isDisplayed();
-    	String Disp = confirm.getText();
+//    	String Disp = confirm.getText();
     	Assert.assertTrue(isDisp);
-    	System.out.println(Disp);
+//    	System.out.println(Disp);
     	wait.until(ExpectedConditions.elementToBeClickable(ok));
     	ok.click();
     }
