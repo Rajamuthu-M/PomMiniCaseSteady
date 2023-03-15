@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32152" started-at="2023-03-14T20:38:30 IST" finished-at="2023-03-14T20:39:03 IST">
+  <suite name="Default suite" duration-ms="34264" started-at="2023-03-15T14:51:43 IST" finished-at="2023-03-15T14:52:17 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32152" started-at="2023-03-14T20:38:30 IST" finished-at="2023-03-14T20:39:03 IST">
+    <test name="Default test" duration-ms="34264" started-at="2023-03-15T14:51:43 IST" finished-at="2023-03-15T14:52:17 IST">
       <class name="testScripts.PlaceOrderTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="setup" is-config="true" duration-ms="9076" started-at="2023-03-14T20:38:30 IST" finished-at="2023-03-14T20:38:39 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="setup" is-config="true" duration-ms="7783" started-at="2023-03-15T14:51:43 IST" finished-at="2023-03-15T14:51:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:1, instance:testScripts.PlaceOrderTest@6379eb]" name="login" duration-ms="1103" started-at="2023-03-14T20:38:39 IST" finished-at="2023-03-14T20:38:41 IST">
+        <test-method status="PASS" signature="login()[pri:1, instance:testScripts.PlaceOrderTest@6379eb]" name="login" duration-ms="4786" started-at="2023-03-15T14:51:50 IST" finished-at="2023-03-15T14:51:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="2" started-at="2023-03-14T20:38:41 IST" finished-at="2023-03-14T20:38:41 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="5" started-at="2023-03-15T14:51:55 IST" finished-at="2023-03-15T14:51:55 IST">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb]" name="addItems" duration-ms="2766" started-at="2023-03-14T20:38:41 IST" data-provider="items" finished-at="2023-03-14T20:38:43 IST">
+        <test-method status="PASS" signature="addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb]" name="addItems" duration-ms="6997" started-at="2023-03-15T14:51:55 IST" data-provider="items" finished-at="2023-03-15T14:52:02 IST">
           <params>
             <param index="0">
               <value>
@@ -39,97 +39,21 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=110.0.1587.69)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [88408e8342c000442af498b4f6c54db2, clickElement {id=7a66003e-1627-4d84-9969-cb2d77ae701b}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.69, ms:edgeOptions: {debuggerAddress: localhost:59174}, msedge: {msedgedriverVersion: 110.0.1587.69 (f970cc122bfe..., userDataDir: C:\Users\Office\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59174/devtoo..., se:cdpVersion: 110.0.1587.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (88408e8342c000442af498b4f6c54db2)] -> xpath: //a[text()='Home ']]
-Session ID: 88408e8342c000442af498b4f6c54db2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=110.0.1587.69)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [88408e8342c000442af498b4f6c54db2, clickElement {id=7a66003e-1627-4d84-9969-cb2d77ae701b}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.69, ms:edgeOptions: {debuggerAddress: localhost:59174}, msedge: {msedgedriverVersion: 110.0.1587.69 (f970cc122bfe..., userDataDir: C:\Users\Office\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59174/devtoo..., se:cdpVersion: 110.0.1587.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (88408e8342c000442af498b4f6c54db2)] -> xpath: //a[text()='Home ']]
-Session ID: 88408e8342c000442af498b4f6c54db2
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at com.sun.proxy.$Proxy17.click(Unknown Source)
-at pages.AddItemPage.toPreview(AddItemPage.java:32)
-at testScripts.PlaceOrderTest.addItems(PlaceOrderTest.java:49)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItems -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="473" started-at="2023-03-14T20:38:43 IST" finished-at="2023-03-14T20:38:44 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-03-15T14:52:02 IST" finished-at="2023-03-15T14:52:02 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addItems status=FAILURE method=PlaceOrderTest.addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb] output={null}]]]>
+                <![CDATA[[TestResult name=addItems status=SUCCESS method=PlaceOrderTest.addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb]" name="addItems" duration-ms="5271" started-at="2023-03-14T20:38:44 IST" data-provider="items" finished-at="2023-03-14T20:38:49 IST">
+        <test-method status="PASS" signature="addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb]" name="addItems" duration-ms="7343" started-at="2023-03-15T14:52:02 IST" data-provider="items" finished-at="2023-03-15T14:52:10 IST">
           <params>
             <param index="0">
               <value>
@@ -145,7 +69,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItems -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-03-14T20:38:49 IST" finished-at="2023-03-14T20:38:49 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-03-15T14:52:10 IST" finished-at="2023-03-15T14:52:10 IST">
           <params>
             <param index="0">
               <value>
@@ -156,38 +80,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb]" name="addItems" duration-ms="3731" started-at="2023-03-14T20:38:49 IST" data-provider="items" finished-at="2023-03-14T20:38:53 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Laptops]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sony vaio i5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addItems -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-03-14T20:38:53 IST" finished-at="2023-03-14T20:38:53 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addItems status=SUCCESS method=PlaceOrderTest.addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="deleteItems()[pri:3, instance:testScripts.PlaceOrderTest@6379eb]" name="deleteItems" duration-ms="3465" started-at="2023-03-14T20:38:53 IST" finished-at="2023-03-14T20:38:56 IST">
+        <test-method status="PASS" signature="deleteItems()[pri:3, instance:testScripts.PlaceOrderTest@6379eb]" name="deleteItems" duration-ms="3315" started-at="2023-03-15T14:52:10 IST" finished-at="2023-03-15T14:52:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteItems -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-03-14T20:38:56 IST" finished-at="2023-03-14T20:38:56 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-03-15T14:52:13 IST" finished-at="2023-03-15T14:52:13 IST">
           <params>
             <param index="0">
               <value>
@@ -198,11 +95,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="purchaseItems()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="purchaseItems" duration-ms="5547" started-at="2023-03-14T20:38:56 IST" depends-on-methods="testScripts.PlaceOrderTest.deleteItems" finished-at="2023-03-14T20:39:02 IST">
+        <test-method status="PASS" signature="purchaseItems()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="purchaseItems" duration-ms="3414" started-at="2023-03-15T14:52:13 IST" depends-on-methods="testScripts.PlaceOrderTest.deleteItems" finished-at="2023-03-15T14:52:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseItems -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-03-14T20:39:02 IST" finished-at="2023-03-14T20:39:02 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="closeApp" is-config="true" duration-ms="554" started-at="2023-03-15T14:52:16 IST" finished-at="2023-03-15T14:52:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-03-15T14:52:16 IST" finished-at="2023-03-15T14:52:16 IST">
           <params>
             <param index="0">
               <value>
@@ -213,10 +114,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="closeApp" is-config="true" duration-ms="576" started-at="2023-03-14T20:39:02 IST" finished-at="2023-03-14T20:39:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
       </class> <!-- testScripts.PlaceOrderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

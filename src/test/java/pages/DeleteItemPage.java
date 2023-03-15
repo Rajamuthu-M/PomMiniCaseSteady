@@ -39,10 +39,10 @@ public class DeleteItemPage extends TestBase {
     	int iAfter=Integer.parseInt(valueAfter);
     	System.out.println(iBefore);
     	System.out.println(iAfter);
-    	Assert.assertNotEquals("iBefore", "iafter");
-    	if(iBefore==iAfter)
-    		System.out.println("Item not deleted");
-    	else
-    		System.out.println("Item deleted");
+//    	Assert.assertNotEquals("iBefore", "iafter");
+//    	if(iBefore==iAfter)
+//    		System.out.println("Item not deleted");
+//    	else
+//    		System.out.println("Item deleted");
 	}
 }

@@ -52,8 +52,9 @@ public class PurchaseItems extends TestBase {
 	
 	public void purchaseItem(String name1,String country1,String city1,String card1,String month1,String year1) throws InterruptedException {  	
     	extentTest = reports.createTest("Purchase Item Test");
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		Thread.sleep(1000);
+		wait.until(ExpectedConditions.elementToBeClickable(toCart));
 		toCart.click();
 		wait.until(ExpectedConditions.elementToBeClickable(buy));
 		buy.click();
@@ -63,14 +64,12 @@ public class PurchaseItems extends TestBase {
 		card.sendKeys(card1);
 		month.sendKeys(month1);
 		year.sendKeys(year1);
-		Thread.sleep(1000);
 		wait.until(ExpectedConditions.elementToBeClickable(purchase));
     	purchase.click();
     	boolean isDisp = confirm.isDisplayed();
     	String Disp = confirm.getText();
     	Assert.assertTrue(isDisp);
     	System.out.println(Disp);
-    	Thread.sleep(1000);
     	wait.until(ExpectedConditions.elementToBeClickable(ok));
     	ok.click();
     }

@@ -5,7 +5,9 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -41,6 +43,8 @@ public class PlaceOrderTest extends TestBase {
     	HomePage = new HomePage();
     	LoginPage = HomePage.toLogin();
     	LoginPage.toCategories("RajaM", "123456");
+    	boolean isDisp = driver.findElement(By.xpath("//a[text()='Welcome RajaM']")).isDisplayed();
+    	Assert.assertTrue(isDisp);
     }
     
     @Test(priority=2,dataProvider = "items")
@@ -53,12 +57,15 @@ public class PlaceOrderTest extends TestBase {
     public void deleteItems() throws InterruptedException {
     	DeleteItemPage deleteItemPage = new DeleteItemPage();
 		deleteItemPage.deleteItem();
+		Assert.assertNotEquals("iBefore", "iafter");
     }
     
     @Test(dependsOnMethods="deleteItems")
     public void purchaseItems() throws InterruptedException {
     	PurchaseItems purchaseItems = new PurchaseItems();
 		purchaseItems.purchaseItem("Raja", "India", "Salem", "76875785", "April", "2024");
+		boolean isDisp = driver.findElement(By.xpath("//h2[(text()='Thank you for your purchase!')]")).isDisplayed();
+		Assert.assertTrue(isDisp);
     }
     
     public static void initialize() {

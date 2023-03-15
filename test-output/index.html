@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Office\AppData\Local\Temp\testng-eclipse--1579724241\testng-customsuite.xml</span>
+                    <span>C:\Users\Office\AppData\Local\Temp\testng-eclipse-1689144509\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testScripts.PlaceOrderTest" hash-for-method="addItems(Phones, Iphone 6 32gb)">addItems(Phones, Iphone 6 32gb)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,12 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testScripts.PlaceOrderTest" hash-for-method="addItems(Monitors, Apple monitor 24)">addItems(Monitors, Apple monitor 24)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testScripts.PlaceOrderTest" hash-for-method="addItems(Phones, Iphone 6 32gb)">addItems(Phones, Iphone 6 32gb)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testScripts.PlaceOrderTest" hash-for-method="addItems(Laptops, Sony vaio i5)">addItems(Laptops, Sony vaio i5)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testScripts.PlaceOrderTest" hash-for-method="addItems(Monitors, Apple monitor 24)">addItems(Monitors, Apple monitor 24)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,9 +139,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testScripts.PlaceOrderTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -165,91 +151,14 @@
                   </a> <!-- addItems(Phones, Iphone 6 32gb) -->
                   <span class="method-name">addItems</span>
                   <span class="parameters">(Phones, Iphone 6 32gb)</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=110.0.1587.69)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [88408e8342c000442af498b4f6c54db2, clickElement {id=7a66003e-1627-4d84-9969-cb2d77ae701b}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 110.0.1587.69, ms:edgeOptions: {debuggerAddress: localhost:59174}, msedge: {msedgedriverVersion: 110.0.1587.69 (f970cc122bfe..., userDataDir: C:\Users\Office\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59174/devtoo..., se:cdpVersion: 110.0.1587.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (88408e8342c000442af498b4f6c54db2)] -&gt; xpath: //a[text()=&apos;Home &apos;]]
-Session ID: 88408e8342c000442af498b4f6c54db2
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy17.click(Unknown Source)
-	at pages.AddItemPage.toPreview(AddItemPage.java:32)
-	at testScripts.PlaceOrderTest.addItems(PlaceOrderTest.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testScripts.PlaceOrderTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="addItems(Monitors, Apple monitor 24)">
                   </a> <!-- addItems(Monitors, Apple monitor 24) -->
                   <span class="method-name">addItems</span>
                   <span class="parameters">(Monitors, Apple monitor 24)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addItems(Laptops, Sony vaio i5)">
-                  </a> <!-- addItems(Laptops, Sony vaio i5) -->
-                  <span class="method-name">addItems</span>
-                  <span class="parameters">(Laptops, Sony vaio i5)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -278,7 +187,7 @@ Session ID: 88408e8342c000442af498b4f6c54db2
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Office\AppData\Local\Temp\testng-eclipse--1579724241\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Office\AppData\Local\Temp\testng-eclipse-1689144509\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -327,36 +236,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'purchaseItems')
+data.setCell(0, 1, 'addItems')
 data.setCell(0, 2, 'testScripts.PlaceOrderTest')
-data.setCell(0, 3, 5547);
+data.setCell(0, 3, 7343);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addItems')
 data.setCell(1, 2, 'testScripts.PlaceOrderTest')
-data.setCell(1, 3, 5271);
+data.setCell(1, 3, 6997);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addItems')
+data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'testScripts.PlaceOrderTest')
-data.setCell(2, 3, 3731);
+data.setCell(2, 3, 4786);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'deleteItems')
+data.setCell(3, 1, 'purchaseItems')
 data.setCell(3, 2, 'testScripts.PlaceOrderTest')
-data.setCell(3, 3, 3465);
+data.setCell(3, 3, 3414);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'addItems')
+data.setCell(4, 1, 'deleteItems')
 data.setCell(4, 2, 'testScripts.PlaceOrderTest')
-data.setCell(4, 3, 2766);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'login')
-data.setCell(5, 2, 'testScripts.PlaceOrderTest')
-data.setCell(5, 3, 1103);
+data.setCell(4, 3, 3315);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -389,58 +294,48 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">9136 ms</span>
+                <span class="method-start">7811 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=login status=SUCCESS method=PlaceOrderTest.login()[pri:1, instance:testScripts.Plac...)</span>
-                <span class="method-start">10241 ms</span>
+                <span class="method-start">12597 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">addItems(Phones, Iphone 6 32gb)</span>
-                <span class="method-start">10269 ms</span>
+                <span class="method-start">12618 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=addItems status=FAILURE method=PlaceOrderTest.addItems(java.lang.String,java.lang.S...)</span>
-                <span class="method-start">13049 ms</span>
+                <span class="method-name">tearDown([TestResult name=addItems status=SUCCESS method=PlaceOrderTest.addItems(java.lang.String,java.lang.S...)</span>
+                <span class="method-start">19622 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">addItems(Monitors, Apple monitor 24)</span>
-                <span class="method-start">13522 ms</span>
+                <span class="method-start">19622 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=addItems status=SUCCESS method=PlaceOrderTest.addItems(java.lang.String,java.lang.S...)</span>
-                <span class="method-start">18800 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">addItems(Laptops, Sony vaio i5)</span>
-                <span class="method-start">18803 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=addItems status=SUCCESS method=PlaceOrderTest.addItems(java.lang.String,java.lang.S...)</span>
-                <span class="method-start">22550 ms</span>
+                <span class="method-start">26965 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">deleteItems</span>
-                <span class="method-start">22552 ms</span>
+                <span class="method-start">26965 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=deleteItems status=SUCCESS method=PlaceOrderTest.deleteItems()[pri:3, instance:test...)</span>
-                <span class="method-start">26018 ms</span>
+                <span class="method-start">30280 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">purchaseItems</span>
-                <span class="method-start">26021 ms</span>
+                <span class="method-start">30285 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=purchaseItems status=SUCCESS method=PlaceOrderTest.purchaseItems()[pri:0, instance:...)</span>
-                <span class="method-start">31570 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">closeApp</span>
-                <span class="method-start">31571 ms</span>
+                <span class="method-start">33704 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=purchaseItems status=SUCCESS method=PlaceOrderTest.purchaseItems()[pri:0, instance:...)</span>
+                <span class="method-start">33704 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

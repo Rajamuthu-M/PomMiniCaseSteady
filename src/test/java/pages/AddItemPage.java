@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import base.TestBase;
 
@@ -30,6 +31,7 @@ public class AddItemPage extends TestBase {
 //		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Home ']")));
 		Thread.sleep(1000);
     	home.click();
+    	Thread.sleep(1000);
     	String currentCategory = "//a[text()='"+category+"']";
     	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='"+category+"']")));
     	driver.findElement(By.xpath(currentCategory)).click();
