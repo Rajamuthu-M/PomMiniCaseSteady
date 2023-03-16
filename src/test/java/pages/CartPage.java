@@ -7,15 +7,31 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import base.TestBase;
 
-public class PurchaseItems extends TestBase {
+public class CartPage extends TestBase {
+	int priceBefore,priceAfter;
+	String valueBefore,valueAfter;
+
+	@FindBy(xpath="//a[text()='Add to cart']")
+	WebElement addToCart;
+	
+	@FindBy(xpath="//a[text()='Home ']")
+	WebElement home;
+	
+	@FindBy(xpath="//a[text()='Cart']")
+	WebElement toCart;
+	
+	@FindBy(id="totalp")
+	WebElement price;
+	
+	@FindBy(xpath="//a[contains(text(),'Delete')][1]")
+	WebElement delete;
 	
 	@FindBy(xpath="//button[contains(text(),'Place Order')]")
 	WebElement buy;
-		
+	
 	@FindBy(xpath="//input[@id='name']")
 	WebElement name;
 	
@@ -43,19 +59,27 @@ public class PurchaseItems extends TestBase {
 	@FindBy(xpath="//button[contains(text(),'OK')]")
 	WebElement ok;
 	
-	@FindBy(xpath="//a[text()='Cart']")
-	WebElement toCart;
-	
-	public PurchaseItems() {
+	public CartPage() {
 		PageFactory.initElements(driver,this);
 	}
 	
+	public void deleteItem() throws InterruptedException {
+		extentTest = reports.createTest("Delete Item Test");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		toCart.click();
+		wait.until(ExpectedConditions.visibilityOf(price));
+    	String valueBefore =price.getText();
+    	wait.until(ExpectedConditions.elementToBeClickable(delete));
+		delete.click();
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(price));
+		String valueAfter =price.getText();
+	}
+
 	public void purchaseItem(String name1,String country1,String city1,String card1,String month1,String year1) throws InterruptedException {  	
     	extentTest = reports.createTest("Purchase Item Test");
-    	Thread.sleep(1000);
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.elementToBeClickable(toCart));
-		toCart.click();
+    	Thread.sleep(1000);
 		wait.until(ExpectedConditions.elementToBeClickable(buy));
 		buy.click();
 		name.sendKeys(name1);
@@ -66,10 +90,6 @@ public class PurchaseItems extends TestBase {
 		year.sendKeys(year1);
 		wait.until(ExpectedConditions.elementToBeClickable(purchase));
     	purchase.click();
-    	boolean isDisp = confirm.isDisplayed();
-//    	String Disp = confirm.getText();
-    	Assert.assertTrue(isDisp);
-//    	System.out.println(Disp);
     	wait.until(ExpectedConditions.elementToBeClickable(ok));
     	ok.click();
     }

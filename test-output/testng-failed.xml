@@ -6,9 +6,8 @@
       <class name="testScripts.PlaceOrderTest">
         <methods>
           <include name="closeApp"/>
-          <include name="addItems" invocation-numbers="1"/>
+          <include name="deleteItem"/>
           <include name="purchaseItems"/>
-          <include name="deleteItems"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
