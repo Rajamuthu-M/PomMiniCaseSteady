@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30238" started-at="2023-03-16T16:09:48 IST" finished-at="2023-03-16T16:10:18 IST">
+  <suite name="Default suite" duration-ms="26301" started-at="2023-03-16T19:12:14 IST" finished-at="2023-03-16T19:12:40 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30238" started-at="2023-03-16T16:09:48 IST" finished-at="2023-03-16T16:10:18 IST">
+    <test name="Default test" duration-ms="26301" started-at="2023-03-16T19:12:14 IST" finished-at="2023-03-16T19:12:40 IST">
       <class name="testScripts.PlaceOrderTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="setup" is-config="true" duration-ms="7169" started-at="2023-03-16T16:09:48 IST" finished-at="2023-03-16T16:09:55 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="setup" is-config="true" duration-ms="6864" started-at="2023-03-16T19:12:14 IST" finished-at="2023-03-16T19:12:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:1, instance:testScripts.PlaceOrderTest@6379eb]" name="login" duration-ms="2814" started-at="2023-03-16T16:09:55 IST" finished-at="2023-03-16T16:09:58 IST">
+        <test-method status="PASS" signature="login()[pri:1, instance:testScripts.PlaceOrderTest@6379eb]" name="login" duration-ms="3930" started-at="2023-03-16T19:12:20 IST" finished-at="2023-03-16T19:12:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-03-16T16:09:58 IST" finished-at="2023-03-16T16:09:58 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-03-16T19:12:24 IST" finished-at="2023-03-16T19:12:24 IST">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb]" name="addItems" duration-ms="5812" started-at="2023-03-16T16:09:58 IST" data-provider="items" finished-at="2023-03-16T16:10:04 IST">
+        <test-method status="PASS" signature="addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb]" name="addItems" duration-ms="4851" started-at="2023-03-16T19:12:24 IST" data-provider="items" finished-at="2023-03-16T19:12:29 IST">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItems -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-03-16T16:10:04 IST" finished-at="2023-03-16T16:10:04 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-03-16T19:12:29 IST" finished-at="2023-03-16T19:12:29 IST">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb]" name="addItems" duration-ms="6585" started-at="2023-03-16T16:10:04 IST" data-provider="items" finished-at="2023-03-16T16:10:10 IST">
+        <test-method status="PASS" signature="addItems(java.lang.String,java.lang.String)[pri:2, instance:testScripts.PlaceOrderTest@6379eb]" name="addItems" duration-ms="2897" started-at="2023-03-16T19:12:29 IST" data-provider="items" finished-at="2023-03-16T19:12:32 IST">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItems -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-03-16T16:10:10 IST" finished-at="2023-03-16T16:10:10 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-03-16T19:12:32 IST" finished-at="2023-03-16T19:12:32 IST">
           <params>
             <param index="0">
               <value>
@@ -80,15 +80,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="deleteItem()[pri:3, instance:testScripts.PlaceOrderTest@6379eb]" name="deleteItem" duration-ms="4023" started-at="2023-03-16T16:10:10 IST" finished-at="2023-03-16T16:10:14 IST">
+        <test-method status="PASS" signature="deleteItem()[pri:3, instance:testScripts.PlaceOrderTest@6379eb]" name="deleteItem" duration-ms="5316" started-at="2023-03-16T19:12:32 IST" finished-at="2023-03-16T19:12:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteItem -->
-        <test-method status="PASS" signature="purchaseItems()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="purchaseItems" duration-ms="3245" started-at="2023-03-16T16:10:14 IST" depends-on-methods="testScripts.PlaceOrderTest.deleteItem" finished-at="2023-03-16T16:10:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- purchaseItems -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-03-16T16:10:14 IST" finished-at="2023-03-16T16:10:14 IST">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-03-16T19:12:37 IST" finished-at="2023-03-16T19:12:37 IST">
           <params>
             <param index="0">
               <value>
@@ -99,7 +95,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-03-16T16:10:17 IST" finished-at="2023-03-16T16:10:17 IST">
+        <test-method status="PASS" signature="purchaseItems()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="purchaseItems" duration-ms="1916" started-at="2023-03-16T19:12:37 IST" depends-on-methods="testScripts.PlaceOrderTest.deleteItem" finished-at="2023-03-16T19:12:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseItems -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-03-16T19:12:39 IST" finished-at="2023-03-16T19:12:39 IST">
           <params>
             <param index="0">
               <value>
@@ -110,7 +110,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="closeApp" is-config="true" duration-ms="528" started-at="2023-03-16T16:10:17 IST" finished-at="2023-03-16T16:10:18 IST">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:testScripts.PlaceOrderTest@6379eb]" name="closeApp" is-config="true" duration-ms="483" started-at="2023-03-16T19:12:39 IST" finished-at="2023-03-16T19:12:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->

@@ -7,6 +7,8 @@
         <methods>
           <include name="closeApp"/>
           <include name="deleteItem"/>
+          <include name="login"/>
+          <include name="addItems"/>
           <include name="purchaseItems"/>
           <include name="setup"/>
           <include name="tearDown"/>

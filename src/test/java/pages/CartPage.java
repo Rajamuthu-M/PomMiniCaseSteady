@@ -13,12 +13,6 @@ import base.TestBase;
 public class CartPage extends TestBase {
 	int priceBefore,priceAfter;
 	String valueBefore,valueAfter;
-
-	@FindBy(xpath="//a[text()='Add to cart']")
-	WebElement addToCart;
-	
-	@FindBy(xpath="//a[text()='Home ']")
-	WebElement home;
 	
 	@FindBy(xpath="//a[text()='Cart']")
 	WebElement toCart;
@@ -52,9 +46,6 @@ public class CartPage extends TestBase {
 	
 	@FindBy(xpath="//button[contains(text(),'Purchase')]")
 	WebElement purchase;
-	
-	@FindBy(xpath="//h2[(text()='Thank you for your purchase!')]")
-	WebElement confirm;
 	
 	@FindBy(xpath="//button[contains(text(),'OK')]")
 	WebElement ok;
